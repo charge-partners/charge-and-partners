@@ -43,3 +43,32 @@
 | SESSION_END              | String      | yyyy-MM-dd'T'HH:mm:ss.SSSZ  | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The date & time when the session ended
 | GEO_POSITION_USER        | String      | [-]#.######,[-]#.######     | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The geo position of the user when the session was authorized
 | GEO_POSITION_CHARGEPOINT | String      | [-]#.######,[-]#.######     | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The geo position of the charging station
+
+## LocationMappingsInput *class*
+| Attribute  | Type                                             | Cardinality  | max. Length   | Description 
+|------------|--------------------------------------------------|--------------|---------------|-------------------------------------------------------------|
+| mappings   |[LocationMapping](types.md#locationmapping-class) | *            | -/-           | The list of location mappings
+
+## LocationMapping *class*
+
+| Attribute  | Type       | Cardinality  | max. Length   | Description 
+|------------|------------|--------------|---------------|---------------------------------------------------------------------------------------------------|
+| latitude   |Decimal     | 1            |10             | The locations latitude part of the geo coordinate (format: [-]#.######)
+| longitude  |Decimal     | 1            |10             | The locations longitude part of the geo coordinate (format: [-]#.######)
+| locationId |String      | 1            |100            | Your location identifier
+| cpoId      |String      | 1            |100            | Your identifier for the CPO operating this location
+
+## LocationDetails *class*
+
+| Attribute     | Type                                      | Cardinality | max. Length | Description 
+|---------------|-------------------------------------------|-------------|-------------|---------------------------------------------------------------------------------------------------|
+| locationId    | String                                    | 1           |100          | The location ID for which you requested data
+| pictures      | [PictureLink](types.md#picturelink-class) | *           |-/-          | A list of pictures available for this location
+
+## PictureLink *class*
+
+| Attribute    | Type        | Cardinality  | max. Length   | Description 
+|--------------|-------------|--------------|---------------|---------------------------------------------------------------------------------------------------|
+| uri          | String      | 1            |100            | The URI where the picture can be retrieved (https link)
+| thumbnailUri | String      | 1            |100            | The URI where the thumbnail of the picture can be retrieved (https link)
+| perspective  | Enumeration | 1            |-/-            | The perspective of the picture. Possible values: CHARGING_STATION, LOCATION_FULL, LOCATION_ENTRANCE, LOCATION_SURROUNDINGS
