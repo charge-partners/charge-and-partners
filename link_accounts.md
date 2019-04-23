@@ -7,4 +7,4 @@ To do so, the following process is required to link your account with a Charge& 
 2. Present a text explaining that the accounts will be linked to your user along with a link to our iOS app or web page. This link has to contain the activation code again.
 3. Once the user clicks on that link he'll be prompted to login with his/her Charge& account (if not already logged into Charge&). After the user is logged into Charge&, the Charge& app or web page will finalize the account link with the Charge& backend. In case the user does not have a Charge& account yet, account registration can be done prior to accepting the link.
 
-In case the user does not want the link to exist anymore, there is an [__API to remove the link__](link_partner_account.md#removing-an-account-link) again.
+In case the user does not want the link between the accounts anymore, there is an [__API to remove the link__](link_partner_account.md#removing-an-account-link) again.
