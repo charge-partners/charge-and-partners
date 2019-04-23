@@ -8,8 +8,8 @@ A set of APIs is available to all Charge& partners to enable partners to use and
 ## Services offered
 
 Currently live Charge& services are:
-- __Charge&Pay__ - pay for a charging session with Charge& kilometers
-- __Charge&Picture__ - take a picture of a charging session and get rewarded with kilometers
+- [__Charge&Pay__](charge_and_pay.md#chargepay) - pay for a charging session with Charge& kilometers
+- [__Charge&Picture__](charge_and_pictures.md#chargepictures) - take a picture of a charging location and get rewarded with kilometers
 
 ## Technical details
 

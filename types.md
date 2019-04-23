@@ -72,3 +72,13 @@
 | uri          | String      | 1            |100            | The URI where the picture can be retrieved (https link)
 | thumbnailUri | String      | 1            |100            | The URI where the thumbnail of the picture can be retrieved (https link)
 | perspective  | Enumeration | 1            |-/-            | The perspective of the picture. Possible values: CHARGING_STATION, LOCATION_FULL, LOCATION_ENTRANCE, LOCATION_SURROUNDINGS
+
+## AddPicture *class*
+
+| Attribute    | Type        | Cardinality  | max. Length   | Description 
+|--------------|-------------|--------------|---------------|---------------------------------------------------------------------------------------------------|
+| latitude     | String      | 1            |100            | The locations latitude part of the geo coordinate (format: [-]#.######)
+| longitude    | String      | 1            |100            | The locations longitude part of the geo coordinate (format: [-]#.######)
+| imageData    | String      | 1            |15MB           | Base64 encoded image data
+| perspective  | Enumeration | 1            |-/-            | The perspective of the picture. Possible values: CHARGING_STATION, LOCATION_FULL, LOCATION_ENTRANCE, LOCATION_SURROUNDINGS
+| challengeId  | String      | ?            |100            | If the user is posting the picture based on a challenge, the challenge ID can be submitted.
