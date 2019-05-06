@@ -34,15 +34,17 @@
 | Possible values          | Type        | Format                      | Required for services                                 | Description 
 |--------------------------|-------------|-----------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | EVSE_ID                  | String      | -/-                         | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The evse ID which was used for the charging session
+| CPO_ID                   | String      | -/-                         | CO2_OFFSET_CHARGING_SESSION                           | The ID of the CPO which owns the charging station which was used for the charging session
 | COUNTRY                  | String      | ISO 3166 alpha-2 or alpha-3 | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The country in which the charging session was done
 | CITY                     | String      | -/-                         | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The city in which the charging session was done
 | STREET                   | String      | -/-                         | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The street in which the charging session was done
 | HOUSE_NUMBER             | String      | -/-                         | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The house-number of the charging location
-| CONSUMED_ENERGY_KWH      | Decimal     | #.##                        | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The amount of energy charged during the session
+| CONSUMED_ENERGY_KWH      | Decimal     | #.##                        | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The amount of energy charged during the session. Attribut is mandatory, value can be empty.
 | SESSION_START            | String      | yyyy-MM-dd'T'HH:mm:ss.SSSZ  | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The date & time when the session was started
 | SESSION_END              | String      | yyyy-MM-dd'T'HH:mm:ss.SSSZ  | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The date & time when the session ended
 | GEO_POSITION_USER        | String      | [-]#.######,[-]#.######     | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The geo position of the user when the session was authorized
 | GEO_POSITION_CHARGEPOINT | String      | [-]#.######,[-]#.######     | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The geo position of the charging station
+| MAX_CHARGING_POWER       | Integer     | #                           | CO2_OFFSET_CHARGING_SESSION                           | The maximum power of the charging station. Will be used for estimating carbon footprint
 
 ## LocationMappingsInput *class*
 | Attribute  | Type                                             | Cardinality  | max. Length   | Description 
