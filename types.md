@@ -82,5 +82,6 @@
 | latitude     | String      | 1            |100            | The locations latitude part of the geo coordinate (format: [-]#.######)
 | longitude    | String      | 1            |100            | The locations longitude part of the geo coordinate (format: [-]#.######)
 | imageData    | String      | 1            |15MB           | Base64 encoded image data
-| perspective  | Enumeration | 1            |-/-            | The perspective of the picture. Possible values: CHARGING_STATION, LOCATION_FULL, LOCATION_ENTRANCE, LOCATION_SURROUNDINGS
-| challengeId  | String      | ?            |100            | If the user is posting the picture based on a challenge, the challenge ID can be submitted.
+| perspective  | Enumeration | ?            |-/-            | The perspective of the picture. Please provide this, if this is known. Possible values: CHARGING_STATION, LOCATION_FULL, LOCATION_ENTRANCE, LOCATION_SURROUNDINGS
+| challengeId  | String      | ?            |100            | If a user is posting the picture based on a challenge, the challenge ID can be submitted.
+| source       | String      | ?            |100            | If the picture is originating from another system, this system can be specified here.
