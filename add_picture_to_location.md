@@ -17,7 +17,7 @@ After the picture is submitted, it will be reviewed and eventually either publis
 | Authorization |Request header | String |1            |100          | The accessToken authorizing you to do the request. The header value must be in form of: Bearer <accessToken>
 | partnerId     |Path param     | String |1            |100          | Your partner ID with which you registered yourself as a partner
 | locationId    |Path param     | String |1            |100          | Your location ID
-| userId        |Query param    | String |1            |100          | The user ID of the user posting the picture
+| userId        |Query param    | String |?            |100          | The user ID of the user posting the picture. Is optional. If not sent, this picture is originating from the partner (or a backend system of the partner). No user will be rewarded in this case.
 | body          |Request body   | [AddPicture](types.md#addpicture-class) |1            |-/-          | The request body containing the picture and meta data
 
 ### Response payload:
