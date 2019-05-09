@@ -42,7 +42,7 @@
 | CONSUMED_ENERGY_KWH      | Decimal     | #.##                        | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The amount of energy charged during the session. Attribut is mandatory, value can be empty.
 | SESSION_START            | String      | yyyy-MM-dd'T'HH:mm:ss.SSSZ  | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The date & time when the session was started
 | SESSION_END              | String      | yyyy-MM-dd'T'HH:mm:ss.SSSZ  | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The date & time when the session ended
-| GEO_POSITION_USER        | String      | [-]#.######,[-]#.######     | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The geo position of the user when the session was authorized
+| GEO_POSITION_USER        | String      | [-]#.######,[-]#.######     |                                                       | The geo position of the user when the session was authorized
 | GEO_POSITION_CHARGEPOINT | String      | [-]#.######,[-]#.######     | PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION | The geo position of the charging station
 | MAX_CHARGING_POWER       | Integer     | #                           | CO2_OFFSET_CHARGING_SESSION                           | The maximum power of the charging station. Will be used for estimating carbon footprint
 
