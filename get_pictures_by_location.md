@@ -6,8 +6,8 @@ Retrieve pictures of one charging location. The location is identified by the lo
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| GET              | https://api.charge-and.com/public/v1/partners/{partnerId}/locations/{locationId} | Production
-| GET              | https://api-pp.charge-and.com/public/v1/partners/{partnerId}/locations/{locationId} | Pre Production
+| GET              | https://api.charge-and.com/v1/partners/{partnerId}/locations/{locationId} | Production
+| GET              | https://api-pp.charge-and.com/v1/partners/{partnerId}/locations/{locationId} | Pre Production
 
 ### Request parameters are as follows:
 
@@ -28,7 +28,7 @@ Retrieve pictures of one charging location. The location is identified by the lo
 
 #### Request
 
-   GET https://api.charge-and.com/public/v1/partners/PCS-001/locations/4553
+   GET https://api.charge-and.com/v1/partners/PCS-001/locations/4553
 
    Request headers:
 ```

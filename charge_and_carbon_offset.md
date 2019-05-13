@@ -10,8 +10,8 @@ To use this service, you can use the following endpoint
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| POST              | https://api.charge-and.com/public/v1/partners/{partnerId}/accounts/{userId}/transactions | Production
-| POST              | https://api-pp.charge-and.com/public/v1/partners/{partnerId}/accounts/{userId}/transactions | Pre Production
+| POST              | https://api.charge-and.com/v1/partners/{partnerId}/accounts/{userId}/transactions | Production
+| POST              | https://api-pp.charge-and.com/v1/partners/{partnerId}/accounts/{userId}/transactions | Pre Production
 
 ### Request parameters are as follows:
 
@@ -32,7 +32,7 @@ To use this service, you can use the following endpoint
 
 #### Request
 
-   POST https://api.charge-and.com/public/v1/partners/PCS-001/accounts/pcsUserId001/transactions
+   POST https://api.charge-and.com/v1/partners/PCS-001/accounts/pcsUserId001/transactions
 
    Request headers:
 ```

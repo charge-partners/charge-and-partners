@@ -6,8 +6,8 @@ Retrieves detail information of a list of charging locations. This is meant as a
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| GET              | https://api.charge-and.com/public/v1/partners/{partnerId}/locations | Production
-| GET              | https://api-pp.charge-and.com/public/v1/partners/{partnerId}/locations | Pre Production
+| GET              | https://api.charge-and.com/v1/partners/{partnerId}/locations | Production
+| GET              | https://api-pp.charge-and.com/v1/partners/{partnerId}/locations | Pre Production
 
 ### Request parameters are as follows:
 
@@ -28,7 +28,7 @@ Retrieves detail information of a list of charging locations. This is meant as a
 
 #### Request
 
-   GET https://api.charge-and.com/public/v1/partners/PCS-001/locations?page=1&limit=4
+   GET https://api.charge-and.com/v1/partners/PCS-001/locations?page=1&limit=4
 
    Request headers:
 ```
