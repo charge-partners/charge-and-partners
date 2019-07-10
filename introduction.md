@@ -14,9 +14,12 @@ Currently live Charge& services are:
 ## Technical details
 
 Services are offered as REST API endpoints in general.
-The endpoints exchange requests and responses in JSON format.
-The APIs are available for backend integration. Each partner who wants to consume Charge& APIs needs to register as a partner with Charge&.
-During [__partner registration__](setting_up.md) an access token is provided to the partner which will be used in subsequent communication.
 
-After successfull registration of a partner, all APIs require the access token to be presented within the Authorization header of the request as a Bearer token.
+The endpoints exchange requests and responses in JSON format.
+
+The APIs are available for backend integration. Each partner who wants to consume Charge& APIs needs to register as a partner with Charge&.
+
+During [__partner registration__](setting_up.md) an **access token** is provided to the partner which will be used in subsequent communication.
+
+After successfull registration of a partner, all APIs require the **access token** to be presented within the Authorization header of the request as a Bearer token.
 

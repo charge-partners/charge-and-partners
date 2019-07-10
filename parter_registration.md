@@ -63,6 +63,42 @@ If you want to set yourself up as a partner of our system, you need to call our 
    }
 ```
 
+### Response
+
+```json
+{
+	"id": 4,
+   	"name": "Porsche Charging Service",
+   	"partnerId": "PCS-001",
+   	"logo": "https://connect-store-static01.porsche.com/_ui/images/porsche-logo@3x.png",
+   	"web": " https://connect-store.porsche.com/de/de/porsche-charging-service/p/PorscheChargingService",
+   	"android": "https://play.google.com/store/apps/details?id=com.porsche.mobilityapp&gl=de&hl=de",
+   	"iOS": "https://itunes.apple.com/de/app/mobility-by-porsche/id1286754490?mt=8",
+	"descriptions": [{
+			"key": "DESCRIPTION",
+			"lang": "de",
+			"text": "Der Porsche Charging Service integriert Elektromobilität problemlos in deinen Alltag – digital und vielfältig. Er vereint alle Lademöglichkeiten für Plug-in-Hybride und Elektrofahrzeuge und eröffnet dir Zugang zu Ladesäulen unterschiedlicher Anbieter. Nach einer einfachen Anmeldung über My Porsche und dem Kauf im Porsche Connect Store erhältst du die Porsche ID Card und Zugang zur App. Der Porsche Charging Service bietet aktuell ca. 49.000 Ladepunkte in Deutschland, Österreich, Schweiz, Belgien, Niederlande, Spanien, Frankreich, Dänemark, Finnland und Norwegen."
+		}, {
+			"key": "DESCRIPTION",
+			"lang": "en",
+			"text": "The Porsche Charging Service integrates e-mobility seamlessly into your daily life - digital and versatile. It combine all charging opportunities for plug-in hybrid and electric cars and opens up access to charging stations of various operators. After an easy registration at My Porsche and buying the service within the Porsche Connect store you will receive the Porsche ID Card and access to the Charging App. The Porsche Charging Service offers access to about 49,000 charging stations in Germany, Austria, Switzerland, Belgium, Netherlands, Spain, France, Denmark, Finland and Norway."
+		}
+	],
+	"status": "INITIAL",
+	"accessToken": "<here would be your access token. Keep this secret>"
+}
+```
+
+### Error handling
+
+The following errors are specific to this service:
+
+| Error                      | Http status code                   | Description 
+|----------------------------|------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| PARTNER_ALREADY_REGISTERED | 400                                | The partner with the given partnerId is already registered. Please use a different partnerId for registration 
+
+Please refer to [error handling](error_handling.md) for the general concept and usage of errors within the API
+
 ## Next steps
 
 As soon as you are set up as a partner, you probably want to [__link your users__ with Charge& users](link_accounts.md) to provide them with the services available.

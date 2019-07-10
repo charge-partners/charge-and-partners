@@ -40,7 +40,7 @@ Authorization: Bearer <your JWT access token received during partner registratio
 
 ### Sample response
 ```json
-{[
+[
     {
 		"locationId": "602",
 		"pictures": []
@@ -75,5 +75,5 @@ Authorization: Bearer <your JWT access token received during partner registratio
 			}
 		]
 	}
-]}
+]
 ```
