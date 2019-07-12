@@ -6,8 +6,8 @@ If you want to link your users with Charge& users, a set of APIs is available to
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| POST             | https://api.charge-and.com/public/v1/partners/{partnerId}/accounts?userId={userId} | Production
-| POST             | https://api-pp.charge-and.com/public/v1/partners/{partnerId}/accounts?userId={userId} | Pre Production
+| POST             | https://api.charge-and.com/v1/partners/{partnerId}/accounts?userId={userId} | Production
+| POST             | https://api-pp.charge-and.com/v1/partners/{partnerId}/accounts?userId={userId} | Pre Production
 
 ### Request parameters are as follows:
 
@@ -29,7 +29,7 @@ If you want to link your users with Charge& users, a set of APIs is available to
 
 #### Request
 
-   POST https://api.charge-and.com/public/v1/partners/PCS-001/accounts?userId=pcsUserId001
+   POST https://api.charge-and.com/v1/partners/PCS-001/accounts?userId=pcsUserId001
 
    Request headers:
 ```
@@ -50,8 +50,8 @@ Response body:
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| DELETE           | https://api.charge-and.com/public/v1/partners/{partnerId}/accounts?userId={userId} | Production
-| DELETE           | https://api-pp.charge-and.com/public/v1/partners/{partnerId}/accounts?userId={userId} | Pre Production
+| DELETE           | https://api.charge-and.com/v1/partners/{partnerId}/accounts?userId={userId} | Production
+| DELETE           | https://api-pp.charge-and.com/v1/partners/{partnerId}/accounts?userId={userId} | Pre Production
 
 ### Request parameters are as follows:
 
@@ -66,7 +66,7 @@ The request does not offer a response load as such. Success or failure of the re
 
 ### Sample request
 
-   DELETE https://api.charge-and.com/public/v1/partners/PCS-001/accounts?userId=pcsUserId001
+   DELETE https://api.charge-and.com/v1/partners/PCS-001/accounts?userId=pcsUserId001
 
    Request headers:
 ```

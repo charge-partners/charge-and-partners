@@ -9,7 +9,7 @@ If you want to set yourself up as a partner of our system, you need to call our 
 
 ## Request payload is as follows:
 
-| Attribute    | Type                               | Cardinality | max. Length | Description 
+| Attribute    | Type                               | [Cardinality](syntax.md#cardinality) | max. Length | Description 
 |--------------|------------------------------------|-------------|-------------|---------------------------------------------------------------------------------------------------|
 | name         |String                              |1            |100          | The name of the partner. Will be visible on our website and on transactions done with this partner
 | partnerId    |String                              |1            |100          | A system wide unique identifier of this partner. Pick any ID you see fit. Will not be visible to users
