@@ -70,3 +70,27 @@ Response body:
 ```json
 {"transactionId":"348328463872","partner":"MSP Partner","kilometer":-38,"status":"CONFIRMED","created":"2019-04-23T08:07:48.788+0000","type":"PAY_FOR_CHARGING_SESSION","address":"Kölner Straße, Eschborn"}
 ```
+
+#### Error message examples
+
+In case of an invalid parameter value (e.g. if you pay for a session with a negative amount of kilometers):
+```json
+{"error":"INVALID_PARAMETER","args":[-5,"kilometer"]}
+```
+
+In case the user is not known to Charge& (or linking of accounts is uncomplete):
+```json
+{"error":"REFERENCED_OBJECT_NOT_FOUND","args":["user","msp_001-unknown"]}
+```
+
+In case of insufficient account balance:
+```json
+{"error":"ACCOUNT_BALANCE_NOT_SUFFICIENT","args":[15,25]}
+```
+
+In case of the transaction being already completed (e.g. if you implement a retry mechanism for error handling):
+```json
+{"error":"TRANSACTION_ALREADY_PROCESSED","args":["348328463873"]}
+```
+
+Please refer to [error handling](error_handling.md#error-handling) for generic errors.
