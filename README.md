@@ -1,6 +1,6 @@
-This repository contains the public API offered by __Charge&__
+This repository contains the public API offered by __&Charge__
 
-The `master` branch always contains the latest official release and describes the productive endpoint of the __Charge&__ API.
+The `master` branch always contains the latest official release and describes the productive endpoint of the __&Charge__ API.
 
 ## Contents
 * [__Introduction__](introduction.md)

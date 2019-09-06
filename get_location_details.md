@@ -6,8 +6,8 @@ Retrieves detail information of a list of charging locations. This is meant as a
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| GET              | https://api.charge-and.com/v1/partners/{partnerId}/locations | Production
-| GET              | https://api-pp.charge-and.com/v1/partners/{partnerId}/locations | Pre Production
+| GET              | https://api.and-charge.com/v1/partners/{partnerId}/locations | Production
+| GET              | https://api-pp.and-charge.com/v1/partners/{partnerId}/locations | Pre Production
 
 ### Request parameters are as follows:
 
@@ -28,7 +28,7 @@ Retrieves detail information of a list of charging locations. This is meant as a
 
 #### Request
 
-   GET https://api.charge-and.com/v1/partners/PCS-001/locations?page=1&limit=4
+   GET https://api.and-charge.com/v1/partners/PCS-001/locations?page=1&limit=4
 
    Request headers:
 ```
@@ -53,24 +53,24 @@ Authorization: Bearer <your JWT access token received during partner registratio
 	}, {
 		"locationId": "605",
 		"pictures": [{
-				"uri": "https://pictures.charge-and.com/img/x6NOEAjbh7JPH5d2nDagDoRMsdHEuKze.jpg",
-				"thumbnailUri": "https://pictures.charge-and.com/thumb/x6NOEAjbh7JPH5d2nDagDoRMsdHEuKze.jpg",
+				"uri": "https://pictures.and-charge.com/img/x6NOEAjbh7JPH5d2nDagDoRMsdHEuKze.jpg",
+				"thumbnailUri": "https://pictures.and-charge.com/thumb/x6NOEAjbh7JPH5d2nDagDoRMsdHEuKze.jpg",
 				"perspective": "LOCATION_SURROUNDINGS"
 			}, {
-				"uri": "https://pictures.charge-and.com/img/qJZZSxd13jvU9hDPs7JC9mAee5cmDZdp.jpg",
-				"thumbnailUri": "https://pictures.charge-and.com/thumb/qJZZSxd13jvU9hDPs7JC9mAee5cmDZdp.jpg",
+				"uri": "https://pictures.and-charge.com/img/qJZZSxd13jvU9hDPs7JC9mAee5cmDZdp.jpg",
+				"thumbnailUri": "https://pictures.and-charge.com/thumb/qJZZSxd13jvU9hDPs7JC9mAee5cmDZdp.jpg",
 				"perspective": "CHARGING_STATION"
 			}, {
-				"uri": "https://pictures.charge-and.com/img/Qv1Q9SLEc15gamxxXczFw2CsUlCGstIJ.jpg",
-				"thumbnailUri": "https://pictures.charge-and.com/thumb/Qv1Q9SLEc15gamxxXczFw2CsUlCGstIJ.jpg",
+				"uri": "https://pictures.and-charge.com/img/Qv1Q9SLEc15gamxxXczFw2CsUlCGstIJ.jpg",
+				"thumbnailUri": "https://pictures.and-charge.com/thumb/Qv1Q9SLEc15gamxxXczFw2CsUlCGstIJ.jpg",
 				"perspective": "CHARGING_STATION"
 			}, {
-				"uri": "https://pictures.charge-and.com/img/CQSBxXp14dyNIeDdYA9mfS8J4pH5DVDY.jpg",
-				"thumbnailUri": "https://pictures.charge-and.com/thumb/CQSBxXp14dyNIeDdYA9mfS8J4pH5DVDY.jpg",
+				"uri": "https://pictures.and-charge.com/img/CQSBxXp14dyNIeDdYA9mfS8J4pH5DVDY.jpg",
+				"thumbnailUri": "https://pictures.and-charge.com/thumb/CQSBxXp14dyNIeDdYA9mfS8J4pH5DVDY.jpg",
 				"perspective": "LOCATION_FULL"
 			}, {
-				"uri": "https://pictures.charge-and.com/img/gts4bN34Y93v4aLK1wGk8ZzJh5ryu99x.jpg",
-				"thumbnailUri": "https://pictures.charge-and.com/thumb/gts4bN34Y93v4aLK1wGk8ZzJh5ryu99x.jpg",
+				"uri": "https://pictures.and-charge.com/img/gts4bN34Y93v4aLK1wGk8ZzJh5ryu99x.jpg",
+				"thumbnailUri": "https://pictures.and-charge.com/thumb/gts4bN34Y93v4aLK1wGk8ZzJh5ryu99x.jpg",
 				"perspective": "LOCATION_ENTRANCE"
 			}
 		]

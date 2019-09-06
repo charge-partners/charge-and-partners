@@ -1,6 +1,6 @@
 # Charge&Pay
 
-Pay for a users charging session with Charge& kilometers.
+Pay for a users charging session with &Charge kilometers.
 Send us a users CDR, and the amount of kilometers you expect the user to pay for this CDR and we will check with the users account balance and do the transaction.
 
 To use this service, you can use the following endpoint
@@ -9,8 +9,8 @@ To use this service, you can use the following endpoint
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| POST              | https://api.charge-and.com/v1/partners/{partnerId}/accounts/{userId}/transactions | Production
-| POST              | https://api-pp.charge-and.com/v1/partners/{partnerId}/accounts/{userId}/transactions | Pre Production
+| POST              | https://api.and-charge.com/v1/partners/{partnerId}/accounts/{userId}/transactions | Production
+| POST              | https://api-pp.and-charge.com/v1/partners/{partnerId}/accounts/{userId}/transactions | Pre Production
 
 ### Request parameters are as follows:
 
@@ -31,7 +31,7 @@ To use this service, you can use the following endpoint
 
 #### Request
 
-   POST https://api.charge-and.com/v1/partners/PCS-001/accounts/pcsUserId001/transactions
+   POST https://api.and-charge.com/v1/partners/PCS-001/accounts/pcsUserId001/transactions
 
    Request headers:
 ```
@@ -78,7 +78,7 @@ In case of an invalid parameter value (e.g. if you pay for a session with a nega
 {"error":"INVALID_PARAMETER","args":[-5,"kilometer"]}
 ```
 
-In case the user is not known to Charge& (or linking of accounts is uncomplete):
+In case the user is not known to &Charge (or linking of accounts is uncomplete):
 ```json
 {"error":"REFERENCED_OBJECT_NOT_FOUND","args":["user","msp_001-unknown"]}
 ```

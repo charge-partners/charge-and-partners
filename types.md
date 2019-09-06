@@ -26,7 +26,7 @@
 | transactionId        |String      | 1            |100            | The ID of the transaction.
 | transactionReference |String      | ?            |100            | A transaction reference, if you need it
 | service              |Enumeration | 1            |-/-            | The service you want to create a transaction for. Possible values are: PAY_FOR_CHARGING_SESSION, CO2_OFFSET_CHARGING_SESSION, DONATE_FOR_CO2_OFFSET
-| kilometer            |Integer     | 1            |-/-            | The value of the transaction in Charge& kilometers
+| kilometer            |Integer     | 1            |-/-            | The value of the transaction in &Charge kilometers
 | serviceSpecificData  |Map of [ServiceAttribute](types.md#serviceattribute-enumeration) | 1            |-/-            | All service specific attributes
 
 ## ServiceAttribute *enumeration*

@@ -1,13 +1,13 @@
 # API Endpoint - accounts
 
-If you want to link your users with Charge& users, a set of APIs is available to you.
+If you want to link your users with &Charge users, a set of APIs is available to you.
 
 ## Setting up an account link
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| POST             | https://api.charge-and.com/v1/partners/{partnerId}/accounts?userId={userId} | Production
-| POST             | https://api-pp.charge-and.com/v1/partners/{partnerId}/accounts?userId={userId} | Pre Production
+| POST             | https://api.and-charge.com/v1/partners/{partnerId}/accounts?userId={userId} | Production
+| POST             | https://api-pp.and-charge.com/v1/partners/{partnerId}/accounts?userId={userId} | Pre Production
 
 ### Request parameters are as follows:
 
@@ -22,14 +22,14 @@ If you want to link your users with Charge& users, a set of APIs is available to
 | Attribute      | Type                               | Cardinality | max. Length | Description 
 |----------------|------------------------------------|-------------|-------------|---------------------------------------------------------------------------------------------------|
 | status         |String                              |1            | -/-         | An enumeration reporting on the status of the operation. Possible values are: INITIAL, LINKED
-| activationCode |String                              |1            |100          | The activation code that needs to be passed to the Charge& webpage or iOS app to complete the link
+| activationCode |String                              |1            |100          | The activation code that needs to be passed to the &Charge webpage or iOS app to complete the link
 | userId         |String                              |1            |100          | The user ID for which you requested the account link
 
 ### Sample request & response
 
 #### Request
 
-   POST https://api.charge-and.com/v1/partners/PCS-001/accounts?userId=pcsUserId001
+   POST https://api.and-charge.com/v1/partners/PCS-001/accounts?userId=pcsUserId001
 
    Request headers:
 ```
@@ -50,8 +50,8 @@ Response body:
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| DELETE           | https://api.charge-and.com/v1/partners/{partnerId}/accounts?userId={userId} | Production
-| DELETE           | https://api-pp.charge-and.com/v1/partners/{partnerId}/accounts?userId={userId} | Pre Production
+| DELETE           | https://api.and-charge.com/v1/partners/{partnerId}/accounts?userId={userId} | Production
+| DELETE           | https://api-pp.and-charge.com/v1/partners/{partnerId}/accounts?userId={userId} | Pre Production
 
 ### Request parameters are as follows:
 
@@ -66,7 +66,7 @@ The request does not offer a response load as such. Success or failure of the re
 
 ### Sample request
 
-   DELETE https://api.charge-and.com/v1/partners/PCS-001/accounts?userId=pcsUserId001
+   DELETE https://api.and-charge.com/v1/partners/PCS-001/accounts?userId=pcsUserId001
 
    Request headers:
 ```

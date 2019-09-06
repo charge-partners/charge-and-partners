@@ -6,8 +6,8 @@ If you want to retrieve summary information about a linked user, you can use the
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| GET              | https://api.charge-and.com/public/v1/partners/{partnerId}/accounts/{userId} | Production
-| GET              | https://api-pp.charge-and.com/public/v1/partners/{partnerId}/accounts/{userId} | Pre Production
+| GET              | https://api.and-charge.com/public/v1/partners/{partnerId}/accounts/{userId} | Production
+| GET              | https://api-pp.and-charge.com/public/v1/partners/{partnerId}/accounts/{userId} | Pre Production
 
 ### Request parameters are as follows:
 
@@ -21,14 +21,14 @@ If you want to retrieve summary information about a linked user, you can use the
 
 | Attribute      | Type                               | Cardinality | max. Length | Description 
 |----------------|------------------------------------|-------------|-------------|---------------------------------------------------------------------------------------------------|
-| kmAvailable    |int                                 |1            | -/-         | The Charge& KM available to the user
-| kmPending      |int                                 |1            | -/-         | The Charge& KM that are currently pending (e.g. open online shopping transactions)
+| kmAvailable    |int                                 |1            | -/-         | The &Charge KM available to the user
+| kmPending      |int                                 |1            | -/-         | The &Charge KM that are currently pending (e.g. open online shopping transactions)
 
 ### Sample request & response
 
 #### Request
 
-   GET https://api.charge-and.com/public/v1/partners/PCS-001/accounts/pcsUserId001
+   GET https://api.and-charge.com/public/v1/partners/PCS-001/accounts/pcsUserId001
 
    Request headers:
 ```

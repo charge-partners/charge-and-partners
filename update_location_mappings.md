@@ -6,8 +6,8 @@ Send us your location data so we can use it to map pictures and other data to it
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| POST             | https://api.charge-and.com/public/v1/partners/{partnerId}/locations | Production
-| POST             | https://api-pp.charge-and.com/public/v1/partners/{partnerId}/locations | Pre Production
+| POST             | https://api.and-charge.com/public/v1/partners/{partnerId}/locations | Production
+| POST             | https://api-pp.and-charge.com/public/v1/partners/{partnerId}/locations | Pre Production
 
 ### Request parameters are as follows:
 
@@ -25,7 +25,7 @@ The request does not deliver any data as a response. Verify the http status to e
 
 #### Request
 
-   POST https://api.charge-and.com/public/v1/partners/PCS-001/locations
+   POST https://api.and-charge.com/public/v1/partners/PCS-001/locations
 
    Request headers:
 ```

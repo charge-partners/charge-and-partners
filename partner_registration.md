@@ -4,8 +4,8 @@ If you want to set yourself up as a partner of our system, you need to call our 
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| POST             | https://api.charge-and.com/public/v1/partners | Production
-| POST             | https://api-pp.charge-and.com/public/v1/partners | Pre Production
+| POST             | https://api.and-charge.com/public/v1/partners | Production
+| POST             | https://api-pp.and-charge.com/public/v1/partners | Pre Production
 
 ## Request payload is as follows:
 
@@ -38,7 +38,7 @@ If you want to set yourself up as a partner of our system, you need to call our 
 
 ### Request
 
-   POST https://api.charge-and.com/public/v1/partners
+   POST https://api.and-charge.com/public/v1/partners
    
    POST data:
 ```json
@@ -101,4 +101,4 @@ Please refer to [error handling](error_handling.md) for the general concept and 
 
 ## Next steps
 
-As soon as you are set up as a partner, you probably want to [__link your users__ with Charge& users](link_accounts.md) to provide them with the services available.
+As soon as you are set up as a partner, you probably want to [__link your users__ with &Charge users](link_accounts.md) to provide them with the services available.

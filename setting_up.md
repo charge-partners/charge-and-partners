@@ -1,6 +1,6 @@
 # Setting up the partner connection
 
-To set up a communication between your system and Charge& you must register yourself as a partner.
+To set up a communication between your system and &Charge you must register yourself as a partner.
 Registration is a two step process:
 ## Step 1 - Call our API to register yourself.
 You can do this by submitting your details at our [__registration endpoint__](partner_registration.md).

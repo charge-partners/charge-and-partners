@@ -6,8 +6,8 @@ If you want to retrieve the transactions a user has done, you can use the follow
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| GET              | https://api.charge-and.com/public/v1/partners/{partnerId}/accounts/{userId}/transactions | Production
-| GET              | https://api-pp.charge-and.com/public/v1/partners/{partnerId}/accounts/{userId}/transactions | Pre Production
+| GET              | https://api.and-charge.com/public/v1/partners/{partnerId}/accounts/{userId}/transactions | Production
+| GET              | https://api-pp.and-charge.com/public/v1/partners/{partnerId}/accounts/{userId}/transactions | Pre Production
 
 ### Request parameters are as follows:
 
@@ -29,7 +29,7 @@ If you want to retrieve the transactions a user has done, you can use the follow
 
 #### Request
 
-   GET https://api.charge-and.com/public/v1/partners/PCS-001/accounts/pcsUserId001/transactions
+   GET https://api.and-charge.com/public/v1/partners/PCS-001/accounts/pcsUserId001/transactions
 
    Request headers:
 ```

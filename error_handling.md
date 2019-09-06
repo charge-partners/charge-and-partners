@@ -7,7 +7,7 @@ To determine the status of an API call, the http status code of the response wil
 |------------------|---------------------------------------------------------------------------|--------------|
 | 200 till 299     | Success. The request was successfully handled           .                 | -/-
 | 400 till 499     | Client error. Bad request. Something with the request was wrong.          | Check the request and fix the issue. Usually something like a missing attribute; an invalid reference to a resource or an invalid value
-| 500 till 599     | Server error. Something went wrong within Charge& or a system we rely on. | Your request was legit. Please notify us if the issue pertains. Usually we scan our logs for those errors and are working on a fix
+| 500 till 599     | Server error. Something went wrong within &Charge or a system we rely on. | Your request was legit. Please notify us if the issue pertains. Usually we scan our logs for those errors and are working on a fix
 
 As the http status is only a number, you might get confused on why a specific error occurs. To help you debug or analyze an issue, we try to give you a more detailed error object that explains and possible parameterizes an issue.
 E.g. you might get the information that a mandatory parameter was missing within the request. For this error you can expect us to deliver the name of the attribute within the error object.

@@ -7,8 +7,8 @@ After the picture is submitted, it will be reviewed and eventually either publis
 
 | Method           | URL                                                   | Environment                          
 |------------------|-------------------------------------------------------|--------------|
-| POST              | https://api.charge-and.com/v1/partners/{partnerId}/locations/{locationId}/pictures?userId={userId} | Production
-| POST              | https://api-pp.charge-and.com/v1/partners/{partnerId}/locations/{locationId}/pictures?userId={userId} | Pre Production
+| POST              | https://api.and-charge.com/v1/partners/{partnerId}/locations/{locationId}/pictures?userId={userId} | Production
+| POST              | https://api-pp.and-charge.com/v1/partners/{partnerId}/locations/{locationId}/pictures?userId={userId} | Pre Production
 
 ### Request parameters are as follows:
 
@@ -28,7 +28,7 @@ The request does not deliver any data as a response. Verify the http status to e
 
 #### Request
 
-   POST https://api.charge-and.com/v1/partners/PCS-001/locations/4553/pictures?userId=pcsUserId001
+   POST https://api.and-charge.com/v1/partners/PCS-001/locations/4553/pictures?userId=pcsUserId001
 
    Request headers:
 ```
