@@ -34,7 +34,7 @@ Retrieve pictures of one charging location. The location is identified by the lo
 ```
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer <your JWT access token received during partner registration>
+Authorization: Bearer <your JWT access token received during login>
 ```
 
 

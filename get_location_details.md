@@ -34,7 +34,7 @@ Retrieves detail information of a list of charging locations. This is meant as a
 ```
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer <your JWT access token received during partner registration>
+Authorization: Bearer <your JWT access token received during login>
 ```
 
 

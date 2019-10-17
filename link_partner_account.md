@@ -35,7 +35,7 @@ If you want to link your users with &Charge users, a set of APIs is available to
 ```
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer <your JWT access token received during partner registration>
+Authorization: Bearer <your JWT access token received during login>
 ```
 
 #### Response
@@ -72,5 +72,5 @@ The request does not offer a response load as such. Success or failure of the re
 ```
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer <your JWT access token received during partner registration>
+Authorization: Bearer <your JWT access token received during login>
 ```

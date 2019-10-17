@@ -34,7 +34,7 @@ If you want to retrieve summary information about a linked user, you can use the
 ```
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer <your JWT access token received during partner registration>
+Authorization: Bearer <your JWT access token received during login>
 ```
 
 #### Response

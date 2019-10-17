@@ -24,7 +24,9 @@ If you want to set yourself up as a partner of our system, you need to call our 
 
 | Attribute    | Type                               | Cardinality | max. Length | Description 
 |--------------|------------------------------------|-------------|-------------|---------------------------------------------------------------------------------------------------|
-| accessToken  |String                              |1            | -/-         | The access token that must be used for requesting data from protected API endpoints. Keep this private and treat it as a secret. Do not store this unencrypted and do not share this with 3rd parties or clients.
+| accessToken (Deprecated) |String                  |1            | -/-         | The access token that must be used for requesting data from protected API endpoints. Keep this private and treat it as a secret. Do not store this unencrypted and do not share this with 3rd parties or clients. This attribute is deprecated and will be removed in subsequent versions of this API. Please use attributes accessKeyId and secretAccessKey instead.
+| accessKeyId  |String                              |1            |100          | The ID of your API access key. This is your system's user at our token endpoint
+| secretAccessKey |String                           |1            |100          | The secret value with which your system authenticates itself at our token endpoint
 | name         |String                              |1            |100          | The name of the partner. Will be visible on our website and on transactions done with this partner
 | partnerId    |String                              |1            |100          | A system wide unique identifier of this partner. Pick any ID you see fit. Will not be visible to users
 | type         |Enumeration                         |1            |-/-          | The partner type. Possible values are: MSP, ONLINE_SHOP, OFFLINE_SHOP
@@ -85,7 +87,9 @@ If you want to set yourself up as a partner of our system, you need to call our 
 		}
 	],
 	"status": "INITIAL",
-	"accessToken": "<here would be your access token. Keep this secret>"
+	"accessToken": "<deprecated, do not use this anymore>",
+	"accessKeyId": "DF8eS2h9j0hq",
+	"secretAccessKey": "<treat this value as a secret, don't share it with anybody else>"
 }
 ```
 
@@ -98,6 +102,7 @@ The following errors are specific to this service:
 | PARTNER_ALREADY_REGISTERED | 400                                | The partner with the given partnerId is already registered. Please use a different partnerId for registration 
 
 Please refer to [error handling](error_handling.md) for the general concept and usage of errors within the API
+Please refer to [authentication](authentication.md) for the authentication flow within the API
 
 ## Next steps
 

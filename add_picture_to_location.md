@@ -34,7 +34,7 @@ The request does not deliver any data as a response. Verify the http status to e
 ```
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer <your JWT access token received during partner registration>
+Authorization: Bearer <your JWT access token received during login>
 ```
 
    POST body:

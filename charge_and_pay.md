@@ -37,7 +37,7 @@ To use this service, you can use the following endpoint
 ```
 Accept: application/json
 Content-Type: application/json
-Authorization: Bearer <your JWT access token received during partner registration>
+Authorization: Bearer <your JWT access token received during login>
 ```
 
    POST data:
