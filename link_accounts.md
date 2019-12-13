@@ -12,7 +12,7 @@ To do so, the following process is required to link your account with a &Charge 
 From within your UI design a screen that tells your user that he is about to link his account with his &Charge account.
 Provide a button or link to the user which leads to the following URL when clicked:
 
-https\://and-charge.com/confirmAccountLink?activationCode\=**(code)**&partnerId=**(partnerId)**&partnerUserId=**(partnerUserId)**&callbackUrl=**(callbackUrl)**
+https\://and-charge.com/#/confirmAccountLink?activationCode\=**(code)**&partnerId=**(partnerId)**&partnerUserId=**(partnerUserId)**&callbackUrl=**(callbackUrl)**
 
 Fill the place holders according to the following table:
 
