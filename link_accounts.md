@@ -36,6 +36,7 @@ You can find the status of the operation with the query parameter "ok" (true rep
 | PARTNER_NOT_FOUND                | We did not recognize the partnerId. Either your registration is not yet finished or something else is wrong. Inform us, we'll figure it out.
 | GENERAL_PROCESSING_FAILURE       | Something went wrong on our side. Please get in touch with us, we'll have a look into it. If our backend is unable to process this request, giving it a try a bit later could also solve this.
 | ACTIVATION_CODE_NOT_FOUND        | We did not recognize the activation code you gave us, make sure you use the one, you got from calling our [__accounts endpoint__](link_partner_account.md#setting-up-an-account-link).
+| REFERENCED_OBJECT_NOT_FOUND      | We did not find the referenced partner or account (check error details which business object could not be found. When the object is partner, then parameter partnerId is wrong. When the object is account, the either partnerUserId or activationCode are wrong.
 
 ## How to remove the link between your user and &Charge again 
 In case the user does not want the link between the accounts anymore, there is an [__API to remove the link__](link_partner_account.md#removing-an-account-link) available.
