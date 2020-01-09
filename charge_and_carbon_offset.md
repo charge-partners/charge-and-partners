@@ -1,6 +1,6 @@
 # Charge&Carbon offset
 
-Make your charging session CO2 neutral. 
+Make your charging session is CO2 neutral. 
 Send us a users CDR. We will take the delivered amount of energy (or estimate the amount of energy charged) and make that session CO2 neutral by offsetting the carbon footprint incurred by this session.
 We take the country and, if possible, the CPO into consideration.
 
@@ -8,10 +8,21 @@ To use this service, you can use the following endpoint
 
 ## Create transaction
 
-| Method           | URL                                                   | Environment                          
-|------------------|-------------------------------------------------------|--------------|
-| POST              | https://api.and-charge.com/v1/partners/{partnerId}/accounts/{userId}/transactions | Production
+| Method           | URL                                                                                   | Environment                          
+|------------------|---------------------------------------------------------------------------------------|--------------|
+| POST              | https://api.and-charge.com/v1/partners/{partnerId}/accounts/{userId}/transactions    | Production
 | POST              | https://api-pp.and-charge.com/v1/partners/{partnerId}/accounts/{userId}/transactions | Pre Production
+
+### Carbon offset charging sessions directly
+
+If you do not want your users to pay for carbon offsetting charging sessions, you can cover the costs of offsetting those sessions directly. 
+We will include those transactions in your billing and reports. For this use case you can use the following endpoint. Payload and error handling are identical:
+
+| Method           | URL                                                                 | Environment                          
+|------------------|---------------------------------------------------------------------|--------------|
+| POST              | https://api.and-charge.com/v1/partners/{partnerId}/transactions    | Production
+| POST              | https://api-pp.and-charge.com/v1/partners/{partnerId}/transactions | Pre Production
+
 
 ### Request parameters are as follows:
 
