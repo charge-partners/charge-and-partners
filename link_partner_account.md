@@ -15,7 +15,7 @@ If you want to link your users with &Charge users, a set of APIs is available to
 |---------------|---------------|------------------------------------|-------------|-------------|---------------------------------------------------------------------------------------------------|
 | Authorization |Request header | String                             |1            |100          | The accessToken authorizing you to do the request. The header value must be in form of: Bearer <accessToken>
 | partnerId     |Path param     | String                             |1            |100          | Your partner ID with which you registered yourself as a partner
-| userId        |Query param    | String                             |1            |100          | The user for which you request the account link
+| userId        |Query param    | String                             |1            |100          | The user for which you request the account link (user ID is defined by you, we'll map this to one of our users subsequently).
 
 ### Response payload is as follows:
 
@@ -23,7 +23,7 @@ If you want to link your users with &Charge users, a set of APIs is available to
 |----------------|------------------------------------|-------------|-------------|---------------------------------------------------------------------------------------------------|
 | status         |String                              |1            | -/-         | An enumeration reporting on the status of the operation. Possible values are: INITIAL, LINKED
 | activationCode |String                              |1            |100          | The activation code that needs to be passed to the &Charge webpage or iOS app to complete the link
-| userId         |String                              |1            |100          | The user ID for which you requested the account link
+| userId         |String                              |1            |100          | The user ID for which you requested the account link (user ID is defined by you, we'll map this to one of our users subsequently).
 
 ### Sample request & response
 
