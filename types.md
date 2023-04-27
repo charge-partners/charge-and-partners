@@ -57,10 +57,11 @@
 |------------|------------|--------------|---------------------------------------------------------------------------------------------------|
 | latitude   |Decimal     | 1            | The locations latitude part of the geo coordinate (format: [-]#.######)
 | longitude  |Decimal     | 1            | The locations longitude part of the geo coordinate (format: [-]#.######)
+| cpoId      |String      | 1            | The Operator ID of the cpo operating the location ( preferably something like DE*ABC )
 | locationId |String      | 1            | Your location identifier
 | street     |String      | ?            | The street name of the location
 | houseNumber|String      | ?            | The house number of the location's address
-| postalCode |String      | ?            | The postal copde of the location's address
+| postalCode |String      | ?            | The postal code of the location's address
 | city       |String      | ?            | The city of the location's address
 | countryCode|String      | ?            | The country code (ISO 3166 alpha2 or alpha3) of the location's address
 
