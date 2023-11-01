@@ -42,7 +42,7 @@ Authorization: Bearer <your JWT access token received during login>
 	     "longitude": "7.212042",
 	     "locationId": "7981",
 	     "cpoId": "DE*ISE",
-		 "evseIDs": ["DE*ISE*E0100488", "DE*ISE*E0100489", "DE*ISE*E0100490"]
+		 "evseIds": ["DE*ISE*E0100488", "DE*ISE*E0100489", "DE*ISE*E0100490"]
 	  },
 	  {
 	     "latitude":"49.296461",
@@ -55,7 +55,7 @@ Authorization: Bearer <your JWT access token received during login>
 	     "longitude": "5.023878",
 	     "locationId": "24158",
 	     "cpoId": "NL*LMS",
-		 "evseIDs": ["DE*LMS*E1000144933*1", "DE*LMS*E1000144933*2"]
+		 "evseIds": ["DE*LMS*E1000144933*1", "DE*LMS*E1000144933*2"]
 	  }
      ]
 }   
