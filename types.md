@@ -59,6 +59,7 @@
 | longitude  |Decimal     | 1            | The locations longitude part of the geo coordinate (format: [-]#.######)
 | cpoId      |String      | 1            | The Operator ID of the cpo operating the location ( preferably something like DE*ABC )
 | locationId |String      | 1            | Your location identifier
+| evseIds    |String      | *            | The EVSE IDs present at this location
 | street     |String      | ?            | The street name of the location
 | houseNumber|String      | ?            | The house number of the location's address
 | postalCode |String      | ?            | The postal code of the location's address
