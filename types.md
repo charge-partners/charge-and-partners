@@ -71,6 +71,7 @@
 | Attribute     | Type                                      | Cardinality | max. Length | Description 
 |---------------|-------------------------------------------|-------------|-------------|---------------------------------------------------------------------------------------------------|
 | locationId    | String                                    | 1           |100          | The location ID for which you requested data
+| locationIds   | String                                    | +           |100          | A list of all location IDs that match with the returned location. This includes all location IDs that we map to a specific charging location.
 | pictures      | [PictureLink](types.md#picturelink-class) | *           |-/-          | A list of pictures available for this location
 
 ## PictureLink *class*
