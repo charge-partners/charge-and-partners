@@ -76,11 +76,13 @@
 
 ## PictureLink *class*
 
-| Attribute    | Type        | Cardinality  | max. Length   | Description 
-|--------------|-------------|--------------|---------------|---------------------------------------------------------------------------------------------------|
-| uri          | String      | 1            |100            | The URI where the picture can be retrieved (https link)
-| thumbnailUri | String      | 1            |100            | The URI where the thumbnail of the picture can be retrieved (https link)
-| perspective  | Enumeration | 1            |-/-            | The perspective of the picture. Possible values: CHARGING_STATION, LOCATION_FULL, LOCATION_ENTRANCE, LOCATION_SURROUNDINGS
+| Attribute     | Type        | Cardinality  | max. Length   | Description 
+|---------------|-------------|--------------|---------------|---------------------------------------------------------------------------------------------------|
+| uri           | String      | 1            |100            | The URI where the picture can be retrieved (https link)
+| thumbnailUri  | String      | 1            |100            | The URI where the thumbnail of the picture can be retrieved (https link)
+| perspective   | Enumeration | 1            |-/-            | The perspective of the picture. Possible values: CHARGING_STATION, LOCATION_FULL, LOCATION_ENTRANCE, LOCATION_SURROUNDINGS
+| blurHash      | String      | ?            |-/-            | A blur hash of the image (usually around 30 bytes in size). Use this as a placeholder image before the real image is loaded
+| thumbBlurHash | String      | ?            |-/-            | A blur hash of the thumbnail image (usually around 30 bytes in size). Use this as a placeholder image before the real image is loaded
 
 ## AddPicture *class*
 
